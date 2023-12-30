@@ -11,18 +11,16 @@ function App() {
       <main class="main-content w-full px-[var(--margin-x)] pb-8">
         <div class="grid grid-cols-12 gap-4 sm:gap-5 lg:gap-6">
           <div class="col-span-12 lg:col-span-8">
-            <div class="flex items-center justify-between space-x-3 sm:space-x-5">
-              <div class="mt-4 grid grid-cols-1 gap-4 sm:mt-5 sm:grid-cols-2 sm:gap-5 lg:mt-6 lg:gap-6 xl:grid-cols-3">
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-              </div>
+            <div class="mt-4 grid grid-cols-1 gap-4 sm:mt-5 sm:grid-cols-2 sm:gap-5 lg:mt-6 lg:gap-6 xl:grid-cols-3">
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+              <Card />
             </div>
-            <div class="col-span-12 lg:col-span-4">
-              <Plan />
-            </div>
+          </div>
+          <div class="col-span-12 lg:col-span-4">
+            <Plan />
           </div>
         </div>
       </main>
