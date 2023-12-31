@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { RiCalendar2Line } from "react-icons/ri";
 
 const Plan = () => {
     const [isShowPopper, setIsShowPopper] = useState(false);
@@ -28,26 +29,6 @@ const Plan = () => {
                     onClick={() => setIsShowPopper(!isShowPopper)}
                     className="inline-flex"
                 >
-                    <button
-                        ref={popperRef}
-                        className="btn h-8 w-8 rounded-full p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                        >
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
-                            />
-                        </svg>
-                    </button>
-
                     {isShowPopper && (
                         <div className="popper-box rounded-md border border-slate-150 bg-white py-1.5 font-inter dark:border-navy-500 dark:bg-navy-700">
                             <ul>
@@ -79,11 +60,9 @@ const Plan = () => {
                                 className="font-medium text-slate-700 outline-none transition-colors hover:text-primary focus:text-primary dark:text-navy-100 dark:hover:text-accent-light dark:focus:text-accent-light">Picnic
                                 on forest</a>
                             <p className="flex items-center space-x-1.5 text-xs">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5 text-slate-400 dark:text-navy-300"
-                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                                </svg>
+
+                                <RiCalendar2Line className="h-3.5 w-3.5 text-slate-400 dark:text-navy-300" />
+
                                 <span className="line-clamp-1">22 May - 28 May</span>
                             </p>
                             <div className="mt-2 flex -space-x-2">
