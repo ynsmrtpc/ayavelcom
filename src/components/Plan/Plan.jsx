@@ -36,11 +36,11 @@ const Plan = ({ data }) => {
                     </p>
                     <div className="mt-2 flex -space-x-2">
                         <div className="avatar h-6 w-6 hover:z-10">
-                            <img className="rounded-full ring-2 ring-white dark:ring-navy-700" src="images/avatar/avatar-1.jpg"
+                            <img className="rounded-full ring-2 ring-white dark:ring-navy-700" src="../../assets/avatar/avatar-1.jpg"
                                 alt="avatar" />
                         </div>
                         <div className="avatar h-6 w-6 hover:z-10">
-                            <img className="rounded-full ring-2 ring-white dark:ring-navy-700" src="images/avatar/avatar-2.jpg"
+                            <img className="rounded-full ring-2 ring-white dark:ring-navy-700" src="../../assets/avatar/avatar-2.jpg"
                                 alt="avatar" />
                         </div>
 
