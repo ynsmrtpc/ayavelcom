@@ -1,15 +1,23 @@
 import React, { useState } from 'react';
+import { useEffect } from 'react';
 import { RiSunLine, RiMoonFill, RiSearchLine } from "react-icons/ri";
 
 const Navbar = () => {
     const [isSearchbarActive, setIsSearchbarActive] = useState(true);
-    const [isDarkModeEnabled, setIsDarkModeEnabled] = useState(false);
+    const [isDarkModeEnabled, setIsDarkModeEnabled] = useState(localStorage.getItem("_x_darkMode_on"));
 
     const toggleSearchbar = () => {
         setIsSearchbarActive((prev) => !prev);
     };
 
     const toggleDarkMode = () => {
+        if (isDarkModeEnabled) {
+            localStorage.removeItem("_x_darkMode_on");
+            localStorage.getItem("_x_darkMode_on") === "true" ? document.documentElement.classList.add("dark") : document.documentElement.classList.remove("dark");
+        } else {
+            localStorage.setItem("_x_darkMode_on", "true")
+            localStorage.getItem("_x_darkMode_on") === "true" ? document.documentElement.classList.add("dark") : document.documentElement.classList.remove("dark");
+        }
         setIsDarkModeEnabled((prev) => !prev);
     };
 
@@ -48,7 +56,7 @@ const Navbar = () => {
                             onClick={toggleDarkMode}
                             className="btn h-8 w-8 rounded-full p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
                         >
-                            {isDarkModeEnabled ? (
+                            {localStorage.getItem("_x_darkMode_on") === "true" ? (
                                 <RiMoonFill className="h-6 w-6 text-amber-400" />
                             ) : (
                                 <RiSunLine className="h-6 w-6 text-amber-400" />

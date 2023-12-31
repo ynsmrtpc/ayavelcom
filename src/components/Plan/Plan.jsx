@@ -22,7 +22,7 @@ const Plan = () => {
         <div className="mt-4 sm:mt-5">
             <div className="flex items-center justify-between">
                 <h2 className="text-base font-medium tracking-wide text-slate-700 dark:text-navy-100">
-                    My Plan
+                    Gideceğimiz Yerler
                 </h2>
                 <div
                     onClick={() => setIsShowPopper(!isShowPopper)}
@@ -70,33 +70,33 @@ const Plan = () => {
                 </div>
             </div>
             <div className="mt-3 space-y-4">
-                <div class="card p-2">
-                    <div class="flex space-x-4">
-                        <img class="h-18 w-18 rounded-lg object-cover object-center" src="images/travel/picnic-1.jpg"
+                <div className="card p-2">
+                    <div className="flex space-x-4">
+                        <img className="h-18 w-18 rounded-lg object-cover object-center" src="images/travel/picnic-1.jpg"
                             alt="image" />
                         <div>
                             <a href="#"
-                                class="font-medium text-slate-700 outline-none transition-colors hover:text-primary focus:text-primary dark:text-navy-100 dark:hover:text-accent-light dark:focus:text-accent-light">Picnic
+                                className="font-medium text-slate-700 outline-none transition-colors hover:text-primary focus:text-primary dark:text-navy-100 dark:hover:text-accent-light dark:focus:text-accent-light">Picnic
                                 on forest</a>
-                            <p class="flex items-center space-x-1.5 text-xs">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-slate-400 dark:text-navy-300"
+                            <p className="flex items-center space-x-1.5 text-xs">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5 text-slate-400 dark:text-navy-300"
                                     fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                         d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                                 </svg>
-                                <span class="line-clamp-1">22 May - 28 May</span>
+                                <span className="line-clamp-1">22 May - 28 May</span>
                             </p>
-                            <div class="mt-2 flex -space-x-2">
-                                <div class="avatar h-6 w-6 hover:z-10">
-                                    <img class="rounded-full ring-2 ring-white dark:ring-navy-700" src="images/avatar/avatar-1.jpg"
+                            <div className="mt-2 flex -space-x-2">
+                                <div className="avatar h-6 w-6 hover:z-10">
+                                    <img className="rounded-full ring-2 ring-white dark:ring-navy-700" src="images/avatar/avatar-1.jpg"
                                         alt="avatar" />
                                 </div>
-                                <div class="avatar h-6 w-6 hover:z-10">
-                                    <img class="rounded-full ring-2 ring-white dark:ring-navy-700" src="images/avatar/avatar-2.jpg"
+                                <div className="avatar h-6 w-6 hover:z-10">
+                                    <img className="rounded-full ring-2 ring-white dark:ring-navy-700" src="images/avatar/avatar-2.jpg"
                                         alt="avatar" />
                                 </div>
-                                <div class="avatar h-6 w-6 hover:z-10">
-                                    <img class="rounded-full ring-2 ring-white dark:ring-navy-700" src="images/avatar/avatar-10.jpg"
+                                <div className="avatar h-6 w-6 hover:z-10">
+                                    <img className="rounded-full ring-2 ring-white dark:ring-navy-700" src="images/avatar/avatar-10.jpg"
                                         alt="avatar" />
                                 </div>
                             </div>
