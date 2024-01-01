@@ -43,7 +43,6 @@ const Plan = ({ data }) => {
                             <img className="rounded-full ring-2 ring-white dark:ring-navy-700" src="../../assets/avatar/avatar-2.jpg"
                                 alt="avatar" />
                         </div>
-
                     </div>
                 </div>
             </div>
